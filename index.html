@@ -4,6 +4,11 @@
 		<title>Impress Tutorial</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
 		<link href="styles.css" rel="stylesheet" />
+		<script src="http://mrdoob.github.com/three.js/build/three.min.js"></script>
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+    	<script src="http://d3js.org/queue.v1.min.js"></script>
+    	<script src="http://d3js.org/topojson.v0.min.js"></script>
+    	<script src="http://code.jquery.com/jquery-latest.js"></script>
 	</head>
 	<body>
 		<div id="impress">
@@ -12,34 +17,33 @@
 			</div>
 			
 			<div class="step" data-x="0" data-y="0">
-				This is my first slide.  I start at 0,0.  Welcome.
+				Welcome Mavita!  This is my first impress.js, three.js, and d3.js collaboration 
 			</div>
 			
-			<div class="step" data-x="500" data-y="0">
-				This is slide 2.  It slides left 500 pixels.
-			</div>
-			
-			<div class="step" data-x="500" data-y="-400">
-				This is slide 3.  It slides down 400 pixels.
-			</div>
-			
-			<div class="step" data-x="500" data-y="-800" data-scale="0.5">
-				This is slide 4.  It scales everything up by a factor of 2.
-			</div>
-			
-			<div class="step" data-x="0" data-y="-800" data-rotate="90">
-				This is slide 5 and it rotates in.
+			<div class="step" data-x="800" data-y="0">
+				The background here is from my running tutorial on three.js
+				<script src="first.js"></script>
 			</div>
 			
 			<div class="step" data-x="-100" data-y="-800" data-rotate-x="60" data-rotate-y="60" data-rotate-z="30">
-				This is slide 6 and it has a 3D transition.
+				Next it's time to try out friend the map!
 			</div>
 			
-			<div class="step" data-x="-2600" data-y="-800" data-rotate-x="30" data-rotate-y="-60" data-rotate-z="90" data-scale="4">
-				This is slide 7 and it has a 3D transition AND a scale.
+			<div class="step" id="map" data-x="-3000" data-y="-1800" data-z="2400" data-scale="2">
+				
+			</div>
+
+			<div class="step" data-x="4500" data-y="-8000" data-rotate-x="300" data-rotate-y="-60" data-rotate-z="90" data-scale="2">
+				<img src="CPD-PRESENTATION.jpg" />
+			</div>
+
+			<div class="step" data-x="-340" data-y="-8000" data-rotate-x="30" data-rotate-y="-60" data-rotate-z="190" data-scale="4">
+				The end.
 			</div>
 			
 		</div>
 		<script type="text/javascript" src="impress.js"></script>
+		<script type="text/javascript" language = "javascript"
+    src="js/maps2.js"></script>
 	</body>
 </html>

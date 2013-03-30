@@ -1,0 +1,134 @@
+
+html,
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: relative;
+  color: gray;
+  padding: 30px;
+  height: 90%;
+  /* The html and body elements cannot have any padding or margin. */
+
+}
+#brand {
+ pointer-events:none;
+ color:white;
+ display:block;
+ float:left;
+ padding:10px 20px 10px;
+ margin-left:-6px;
+ font-size:20px;
+ /*font-weight:200;*/
+ font-weight:bold;
+ pointer-events:none;
+}
+/* 
+.nav{
+padding: 10px 20px 0px;
+}
+ */
+
+
+hr {
+stroke-width=2;
+}
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  margin: 0 auto -60px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+  height: 60px;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.background {
+  fill: none;
+  pointer-events: none;
+}
+path {
+  fill: url(#pattern);
+  stroke: black;
+  stroke-width:0.25;
+}
+rect {
+  fill: none;
+  stroke: black;
+  stroke-width:0.25;
+}
+
+.axis text {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: grey;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: #5cab36;
+  fill-opacity: .9;
+}
+
+.x.axis path {
+  display: none;
+}
+
+label {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#type2 sous_pre {
+  fill: #8afc53;
+  fill-opacity: .9;
+}    
+
+
+
+#type2 path.arc {
+  pointer-events: none;
+  fill: none;
+  stroke: #5cab36;
+  display: none;
+  stroke-width: 0.9;
+}
+
+#type2 path.cell {
+  fill: none;
+  pointer-events: all;
+}
+
+#type2 circle {
+  fill: #8afc53;
+  fill-opacity: .9;
+  pointer-events: none;
+}
+
+#cells.voronoi path.cell {
+  stroke: none;
+  stroke-width: 0;
+}
+
+#cells g:hover path.arc {
+  display: inherit;
+}
+
+
